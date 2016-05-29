@@ -14,6 +14,13 @@ Moved layout values out of for loop
 ```
 document.body.scrollTop
 ```
+
+Reduced amount of drawn pizzas, by using window size and columns to calculate the needed amount.
+
+```
+var amountofpizzas = Math.floor(window.screen.height / s) * cols;
+```
+
 ### sub 5ms pizza resizing
 
 saved `document.querySelectorAll(".randomPizzaContainer");` as a variable, and gets DX and Width only once.
